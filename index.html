@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Directorio Telefónico</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Directorio Telefónico</h1>
+    <div>
+        <label for="region">Selecciona una Región:</label>
+        <select id="region" onchange="updateStores()">
+            <option value="">--Selecciona una Región--</option>
+            <option value="TCMC">TCMC</option>
+            <option value="AZCP">AZCP</option>
+            <option value="OAXC">OAXC</option>
+        </select>
+    </div>
+    <div>
+        <label for="store">Selecciona una Tienda:</label>
+        <select id="store" onchange="updateContacts()">
+            <option value="">--Selecciona una Tienda--</option>
+        </select>
+    </div>
+    <div>
+        <label for="contact">Contacto:</label>
+        <select id="contact">
+            <option value="">--Selecciona un Contacto--</option>
+        </select>
+    </div>
+    <div>
+        <p id="phoneNumber"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
